@@ -2,8 +2,8 @@
 
 Week 1 project for the **Syntecxhub Data Analysis Internship**. An interactive Power BI dashboard analyzing sales, profit, and regional performance for a retail superstore.
 
-![Executive Overview](screenshots/overview.png)
-![Product Performance](screenshots/product-performance.png)
+![Executive Overview](docs/overview.png)
+![Product Performance](docs/product-performance.png)
 
 ## Objective
 
