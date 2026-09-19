@@ -60,8 +60,8 @@ Two pages:
 
 ## Key Insights
 
-- Revenue shows a clear seasonal pattern, with a spike every November–December, and an overall upward trend from 2014 to 2017.
-- Total revenue grew **20.36%** in the most recent year over the prior year; growth varies notably by region (e.g., the Central region was roughly flat year-over-year).
+- Revenue shows a clear seasonal pattern, with a spike every November - December, and an overall upward trend from 2014 to 2017.
+- Total revenue grew **20.36%** in the most recent year over the prior year. Growth varies notably by region (e.g., the Central region was roughly flat year over year).
 - About **19% of all line items (1,871 of 9,994) were sold at a loss**, indicating discounting is eating into profitability on a meaningful share of orders.
 - The "lowest performing" products by raw revenue turned out to be low-price, low-volume consumables (paper clips, highlighters) rather than genuine underperformers. Profit was a more meaningful lens for identifying products that are actively losing money.
 
