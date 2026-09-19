@@ -18,7 +18,7 @@ Import, clean, and analyze a raw sales dataset to surface trends, top/bottom per
 
 ## Tools Used
 
-- **Power BI Desktop** — data cleaning (Power Query), data modeling, DAX measures, and visualization
+- **Power BI Desktop** - data cleaning (Power Query), data modeling, DAX measures, and visualization
 - **DAX** for KPI and time-intelligence calculations
 
 ## Data Cleaning
@@ -30,9 +30,9 @@ The dataset had no nulls and no fully duplicated rows, but two real issues surfa
 
 ## Data Model
 
-- `Sample - Superstore` — the cleaned fact table
-- `DateTable` — a dedicated date dimension (`CALENDAR()`-generated, marked as the official Date table) with Year, Quarter, Month Name, Month Number, and a sort key so months display in chronological rather than alphabetical order
-- `_Measures` — a dedicated table holding all DAX measures, kept separate from the data tables for a cleaner model
+- `Sample - Superstore` - the cleaned fact table
+- `DateTable` - a dedicated date dimension (`CALENDAR()`-generated, marked as the official Date table) with Year, Quarter, Month Name, Month Number, and a sort key so months display in chronological rather than alphabetical order
+- `_Measures` - a dedicated table holding all DAX measures, kept separate from the data tables for a cleaner model
 - One-to-many relationship: `DateTable[Date]` → `Sample - Superstore[Order Date]`
 
 ## Key Measures (DAX)
@@ -54,16 +54,16 @@ RETURN DIVIDE(CurrentRev - PriorRev, PriorRev)
 
 Two pages:
 
-**1. Executive Overview** — landing page. KPI cards (Total Revenue, Total Profit, Profit Margin, Revenue Growth %), sales by Segment, Ship Mode, Category, a state-level map, and monthly Sales/Profit overlaid by year, with a Region slicer.
+**1. Executive Overview** - landing page. KPI cards (Total Revenue, Total Profit, Profit Margin, Revenue Growth %), sales by Segment, Ship Mode, Category, a state-level map, and monthly Sales/Profit overlaid by year, with a Region slicer.
 
-**2. Product Performance** — monthly/quarterly/yearly sales trend (drillable), Top 10 products by revenue, Lowest 10 products by profit, and Revenue/Profit comparisons by Category and Region.
+**2. Product Performance** - monthly/quarterly/yearly sales trend (drillable), Top 10 products by revenue, Lowest 10 products by profit, and Revenue/Profit comparisons by Category and Region.
 
 ## Key Insights
 
 - Revenue shows a clear seasonal pattern, with a spike every November–December, and an overall upward trend from 2014 to 2017.
 - Total revenue grew **20.36%** in the most recent year over the prior year; growth varies notably by region (e.g., the Central region was roughly flat year-over-year).
 - About **19% of all line items (1,871 of 9,994) were sold at a loss**, indicating discounting is eating into profitability on a meaningful share of orders.
-- The "lowest performing" products by raw revenue turned out to be low-price, low-volume consumables (paper clips, highlighters) rather than genuine underperformers — profit was a more meaningful lens for identifying products that are actively losing money.
+- The "lowest performing" products by raw revenue turned out to be low-price, low-volume consumables (paper clips, highlighters) rather than genuine underperformers. Profit was a more meaningful lens for identifying products that are actively losing money.
 
 ## Repository Structure
 
@@ -73,7 +73,7 @@ Syntecxhub_Sales_Performance_Dashboard/
 ├── Syntecxhub_Sales_Performance_Dashboard.pdf
 ├── data/
 │   └── Sample - Superstore.csv
-├── screenshots/
+├── docs/
 │   ├── overview.png
 │   └── product-performance.png
 └── README.md
@@ -81,4 +81,4 @@ Syntecxhub_Sales_Performance_Dashboard/
 
 ## About
 
-Built as part of the [Syntecxhub](https://www.syntecxhub.com) Data Analysis Internship Program — Week 1.
+Built as part of the [Syntecxhub](https://www.syntecxhub.com) Data Analysis Internship Program - Week 1.
